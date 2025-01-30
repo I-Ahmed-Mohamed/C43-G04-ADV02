@@ -29,6 +29,18 @@
             #endregion
 
 
+            #region Q3
+            Queue<int> queue = new Queue<int>(new int[] { 1, 2, 3, 4, 5 });
+            QueueReverser reverser = new QueueReverser();
+
+            reverser.ReverseQueue(queue);
+
+            foreach (var item in queue)
+            {
+                Console.Write(item + " ");
+            }
+            #endregion
+
         }
     }
 }
