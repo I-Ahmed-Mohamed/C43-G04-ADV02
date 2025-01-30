@@ -41,6 +41,15 @@
             }
             #endregion
 
+
+            #region Q4
+
+            string Input = Console.ReadLine();
+            ParenthesesBalancer balancer = new ParenthesesBalancer();
+            Console.WriteLine(balancer.IsBalanced(Input) ? "Balanced" : "Unbalanced");
+
+            #endregion
+
         }
     }
 }
