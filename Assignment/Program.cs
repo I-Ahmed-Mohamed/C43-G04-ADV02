@@ -69,6 +69,16 @@
             Console.WriteLine(string.Join(" ", evenNumbers));
         }
         #endregion
+
+        #region Q7
+        GenericQueueHandler queueHandler = new GenericQueueHandler();
+
+        queueHandler.Enqueue(1);
+        queueHandler.Enqueue("Apple");
+        queueHandler.Enqueue(5.28);
+
+        queueHandler.PrintQueue();
+        #endregion
     }
-    }
+}
 }
