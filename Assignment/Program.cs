@@ -50,6 +50,7 @@
 
             #endregion
 
+
             #region Q5
             int[] Arr = Console.ReadLine().Split().Select(int.Parse).ToArray();
             DuplicateRemover remover = new DuplicateRemover();
@@ -58,6 +59,16 @@
             Console.WriteLine(string.Join(" ", uniqueArr));
             #endregion
 
+
+            #region Q6
+
+            int[] Arryy = Console.ReadLine().Split().Select(int.Parse).ToArray();
+            OddNumberRemover Remover = new OddNumberRemover();
+
+            int[] evenNumbers = remover.RemoveOddNumbers(Arryy);
+            Console.WriteLine(string.Join(" ", evenNumbers));
         }
+        #endregion
+    }
     }
 }
