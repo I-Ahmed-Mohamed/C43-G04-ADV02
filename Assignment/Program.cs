@@ -19,6 +19,16 @@
             #endregion
 
 
+            #region Q2
+            int N = int.Parse(Console.ReadLine());
+            int[] Arry = Console.ReadLine().Split().Select(int.Parse).ToArray();
+
+            PalindromeChecker checker = new PalindromeChecker();
+            Console.WriteLine(checker.IsPalindrome(arr) ? "YES" : "NO");
+
+            #endregion
+
+
         }
     }
 }
