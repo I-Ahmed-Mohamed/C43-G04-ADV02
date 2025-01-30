@@ -50,6 +50,14 @@
 
             #endregion
 
+            #region Q5
+            int[] Arr = Console.ReadLine().Split().Select(int.Parse).ToArray();
+            DuplicateRemover remover = new DuplicateRemover();
+
+            int[] uniqueArr = remover.RemoveDuplicates(Arr);
+            Console.WriteLine(string.Join(" ", uniqueArr));
+            #endregion
+
         }
     }
 }
